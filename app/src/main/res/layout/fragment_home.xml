@@ -1,9 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage$PlaceholderFragment">
+    android:padding="5dp">
 
-    <TextView android:id="@+id/navigation_menu" android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/bk"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/about"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:gravity="center_horizontal"
+        android:typeface="monospace"
+        android:textSize="20sp"
+        android:textColor="#ffbc7b3e"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUJ Connect"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:gravity="left|center"
+        android:textColor="#ffd95829"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        android:paddingLeft="15dp" />
+
 
 </RelativeLayout>
